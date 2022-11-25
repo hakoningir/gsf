@@ -39,7 +39,21 @@ CREATE TABLE StarsIn (
 	foreign key (movieTitle, movieYear) 
 		references Movie(title,year)
 );
-
+insert into MovieStar values
+	('Tumi' ,'Kopavogur' ,'M' ,'Sept'),
+	('Hakon', 'Saudakrokur' ,'M', 'April'),
+	('Gunnar', 'Vestmannaeyjar' ,'M' ,'Oct'),
+	('Maria', 'Reykjavik' ,'F' ,'June'),
+	('Isabella', 'Reykjavik', 'F', 'Feb'),
+	('Veturlidi' ,'Isafjordur','M' ,'Nov'),
+	('Patrik' ,'Poland' ,'M' ,'Feb');
+	
+insert into Studio values
+	('Metro golden Mayer' ,'Calefornia' ,'SIG'),
+	('Disney Studios' ,'Rio' ,'STI'),
+	('Dreamworks' ,'Raufarhofn'),
+	('Paramount' ,'Kopasker');
+	
 insert into MovieExec values
 	('Siggi', 'Bolholt 10', 'SIG', 150),
 	('Palli', 'Bolholt 11', 'PAL', 930),
@@ -60,5 +74,3 @@ insert into Movie values
 	('I Sure Hope It Does',	2017, 1, 102, 'Metro golden Mayer', 	'ROG'),
 	('Mad Max',				2001, 1, 520, 'Metro golden Mayer', 	'SIG'),
 	('Hacker',				2017, 1, 150, 'Metro golden Mayer', 	'SIG');
-
-
